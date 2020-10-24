@@ -1,14 +1,14 @@
 
-1.�޸���Ŀ���ֺ�һ��Ҫ�޸������ļ�(TSConfigEditor�ļ����µ�settingConfig.xml�ļ��е���Ŀ����)
+1.修改项目名字后，一定要修改配置文件(TSConfigEditor文件夹下的settingConfig.xml文件中的项目名字)
 
-2.������������ã���TSConfigEditor�ļ����µ�settingConfig.xml�ļ��м��������ļ������ּ���(����֮ǰ�ĸ�ʽ���Ӿ���)
+2.导入表数据设置，在TSConfigEditor文件夹下的settingConfig.xml文件中加入配置文件的名字即可(按照之前的格式增加就行)
 
-3.ִ��TSConfigEditor�ļ����µ�TSConfigEditor.exe�ļ�
+3.执行TSConfigEditor文件夹下的TSConfigEditor.exe文件
 
-4.�������ݹ�����ܻ���ֳ���δ��Ӧ������������ĵȴ�(������10����ʱ��ǿ�ƽ������̣����´�)
+4.若表数据过多可能会出现程序未响应的情况，请耐心等待(当超过10分钟时，强制结束进程，重新打开)
 
-4.���������·���ĳ���ļ���Ҫɾ��֮ǰ���ļ�(����Ҫɾ��.txt�ļ���ֻ��ɾ������.ts�ļ�����)
+4.若是想重新发布某个文件需要删除之前的文件(不需要删除.txt文件，只需删除两个.ts文件即可)
 
-5.��Ҫ��egretProperties.json�����������(game_config)��ͬʱ��Ҫִ��egret build -e
+5.需要在egretProperties.json引入第三方库(game_config，jszip)，同时需要执行egret build -e
 
-6.��Ҫ��.txt�ļ����ӵ�default.res.json�ļ���
+6.需要把config文件夹下的table.byte文件添加到default.res.json文件中
