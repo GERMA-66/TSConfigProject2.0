@@ -16,6 +16,26 @@ var UnitCFG = (function (_super) {
     function UnitCFG() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
+    Object.defineProperty(UnitCFG.prototype, "nextCFG", {
+        /**
+         * 下一个表
+         */
+        get: function () {
+            return getTable(Tables.UnitCFG, this.ID + 1);
+        },
+        enumerable: true,
+        configurable: true
+    });
+    Object.defineProperty(UnitCFG.prototype, "isMonster", {
+        /**
+         * 是否是怪物
+         */
+        get: function () {
+            return this.Type1 == 10010;
+        },
+        enumerable: true,
+        configurable: true
+    });
     return UnitCFG;
 }(game_config.$UnitCFG));
 __reflect(UnitCFG.prototype, "UnitCFG", ["ITxtTable"]);

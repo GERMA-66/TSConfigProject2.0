@@ -138,6 +138,7 @@ var Main = (function (_super) {
      * Create scene interface
      */
     Main.prototype.createGameScene = function () {
+        TableMainManager.instance.parseTable();
         var sky = this.createBitmapByName("bg_jpg");
         this.addChild(sky);
         var stageW = this.stage.stageWidth;
@@ -235,7 +236,10 @@ var Main = (function (_super) {
         // panel.horizontalCenter = 0;
         // panel.verticalCenter = 0;
         // this.addChild(panel);
-        TableMainManager.instance.parseTable();
+        var a = getTable(Tables.UnitCFG, 10010001);
+        var b = getTables(Tables.TestCFG);
+        egret.log(a);
+        egret.log(b);
     };
     return Main;
 }(eui.UILayer));

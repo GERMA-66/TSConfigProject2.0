@@ -71,6 +71,9 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected createGameScene(): void {
+
+        TableMainManager.instance.parseTable();
+        
         let sky = this.createBitmapByName("bg_jpg");
         this.addChild(sky);
         let stageW = this.stage.stageWidth;
@@ -178,6 +181,9 @@ class Main extends eui.UILayer {
         // panel.horizontalCenter = 0;
         // panel.verticalCenter = 0;
         // this.addChild(panel);
-        TableMainManager.instance.parseTable();
+        var a: UnitCFG = getTable(Tables.UnitCFG, 10010001);
+        var b: Object = getTables(Tables.TestCFG);
+        egret.log(a);
+        egret.log(b);
     }
 }
